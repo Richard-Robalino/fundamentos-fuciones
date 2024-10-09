@@ -42,16 +42,16 @@
 * console.log(nombretennis ());
 
 # Objectos
-const tennis = {
-    name: "Skate",
-    pares: 1,
-    address: {
-        fabricados: "china",
-        precio: "20.59"
-    },
-    color: ['negro','blanco '],
-    disponibles: true          
-}
+- const tennis = {
+-    name: "Skate",
+-    pares: 1,
+-    address: {
+-        fabricados: "china",
+-        precio: "20.59"
+-    },
+-    color: ['negro','blanco '],
+-    disponibles: true          
+- }
 
 
 
