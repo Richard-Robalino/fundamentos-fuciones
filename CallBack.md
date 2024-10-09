@@ -10,7 +10,7 @@
 *let discountedProducts = products.map((product) => {
 *  let discountedPrice = product.price * 0.9; // Aplicar el 10% de descuento
 *  return { ...product, price: discountedPrice.toFixed(2) };
-*});
+* });
 
-*console.log(discountedProducts);
-*console.log(products);
+* console.log(discountedProducts);
+* console.log(products);
