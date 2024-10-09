@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/92c52d3a-3454-4ede-aca3-329d6f57f768)
+
 # Variables
 - var precio=17
 - let precio1=15.25
