@@ -46,8 +46,8 @@
 -    name: "Skate",
 -    pares: 1,
 -    address: {
--        fabricados: "china",
--        precio: "20.59"
+-    fabricados: "china",
+-    precio: "20.59"
 -    },
 -    color: ['negro','blanco '],
 -    disponibles: true          
