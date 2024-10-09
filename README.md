@@ -53,5 +53,10 @@
 -    disponibles: true          
 - }
 
+# Argumentos
 
+- const validarcodigodescuento = function(boleto,descuento){
+- console.log(`El descuento ${descuento} a los tennis son Skate`);
+- }
+- validarcodifodescuento ("154515154", "10€")
 
