@@ -1,64 +1,23 @@
 ![image](https://github.com/user-attachments/assets/92c52d3a-3454-4ede-aca3-329d6f57f768)
+# Spread
+# Usaremos el operador spread para agregar productos al carrito de compras sin modificar el carrito
 
-# Variables
-- var precio=17
-- let precio1=15.25
-- let Proveedor ="MAINALUN SHOES WW"
-- let disponible =True
-- let agotado = 0; //underfined
-- let busqueda =null
-- let carritotienda ='carrito'
-  
-# CallBack
-- Lista de productos en la tienda
-* let products = [
-*  { id: 1, name: "Zapatos de skate ", price: 17.29 },
-*  { id: 2, name: "Zapatillas de Skate MAINALUN ", price: 29.89 },
-*  { id: 3, name: "Zapatos de skateboarding", price: 45.00 }
-*];
+ * const carritoDeCompras = ['Zapatillas', 'Camiseta', 'Reloj'];
+ * const nuevoCarritoDeCompras = [...carritoDeCompras, 'Bolso', 'Lentes de sol'];
+ * console.log(nuevoCarritoDeCompras); 
+ 
+# Rest
+# Supongamos que tienes una función que recibe varios atributos de un producto. Usamos el operador rest para capturar esos atributos adicionales
 
-* Aplicar un descuento del 10% a cada producto
-*let discountedProducts = products.map((product) => {
-*  let discountedPrice = product.price * 0.9; // Aplicar el 10% de descuento
-*  return { ...product, price: discountedPrice.toFixed(2) };
-* });
-
-* console.log(discountedProducts);
-* console.log(products);
-
-# Retorno
-* function stocktennis(){
-*    return "Quedan 4 " 
+* function crearProducto(nombre, precio, ...atributos) {
+*    return {
+*  nombre,
+*  precio,
+*  atributos
+*    };
 * }
-* console.log(stocktennis());
 
-* function preciotennis(){
-*    return "Precio 40.50 " 
-* }
-* console.log(Precionombre tennis ());
+* const nuevoProducto = crearProducto('Zapatos', 49.99, 'Color: Negro', 'Talla: 42', 'Material: Cuero');
 
-
-* function nombretennis(){
-*    return "Jordan" 
-* }
-* console.log(nombretennis ());
-
-# Objectos
-- const tennis = {
--    name: "Skate",
--    pares: 1,
--    address: {
--    fabricados: "china",
--    precio: "20.59"
--    },
--    color: ['negro','blanco '],
--    disponibles: true          
-- }
-
-# Argumentos
-
-- const validarcodigodescuento = function(boleto,descuento){
-- console.log(`El descuento ${descuento} a los tennis son Skate`);
-- }
-- validarcodifodescuento ("154515154", "10€")
-
+* console.log(nuevoProducto);
+* Output: { nombre: 'Zapatos', precio: 49.99, atributos: ['Color: Negro', 'Talla: 42', 'Material: Cuero'] }
