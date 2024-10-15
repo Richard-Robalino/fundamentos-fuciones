@@ -7,6 +7,7 @@
  * console.log(nuevoCarritoDeCompras); 
  
 # Rest
+# Supongamos que tienes una función que recibe varios atributos de un producto. Usamos el operador rest para capturar esos atributos adicionales
 
 * function crearProducto(nombre, precio, ...atributos) {
 *    return {
