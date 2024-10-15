@@ -5,3 +5,18 @@
  * const carritoDeCompras = ['Zapatillas', 'Camiseta', 'Reloj'];
  * const nuevoCarritoDeCompras = [...carritoDeCompras, 'Bolso', 'Lentes de sol'];
  * console.log(nuevoCarritoDeCompras); 
+ 
+# Rest
+
+* function crearProducto(nombre, precio, ...atributos) {
+*    return {
+*  nombre,
+*  precio,
+*  atributos
+*    };
+* }
+
+* const nuevoProducto = crearProducto('Zapatos', 49.99, 'Color: Negro', 'Talla: 42', 'Material: Cuero');
+
+* console.log(nuevoProducto);
+* Output: { nombre: 'Zapatos', precio: 49.99, atributos: ['Color: Negro', 'Talla: 42', 'Material: Cuero'] }
