@@ -1,6 +1,6 @@
 ![image](https://github.com/user-attachments/assets/92c52d3a-3454-4ede-aca3-329d6f57f768)
-# Endpoints
-Aquí tienes dos ejemplos de uso de `async/await` y dos ejemplos de consumo de una API privada sobre una tienda en línea (como Temu):
+
+
 
 ### Ejemplos de `async/await`:
 
@@ -44,7 +44,7 @@ getUserData();
 
 ---
 
-### Ejemplos de consumo de una API privada (temática de tienda online - Temu):
+### Ejemplos de consumo de una API privada :
 
 1. **Obtener lista de productos desde la API privada de Temu:**
 ```javascript
@@ -89,5 +89,4 @@ const fetchProductDetails = async () => {
 fetchProductDetails();
 ```
 
-Estos ejemplos muestran cómo usar `async/await` para manejar operaciones asíncronas y cómo realizar peticiones a una API privada usando un `api_key`, con una temática de tienda online como Temu.
 
