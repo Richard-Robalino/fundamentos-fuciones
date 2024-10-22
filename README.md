@@ -1,23 +1,26 @@
 ![image](https://github.com/user-attachments/assets/92c52d3a-3454-4ede-aca3-329d6f57f768)
-# Spread
-# Usaremos el operador spread para agregar productos al carrito de compras sin modificar el carrito
+# Endpoints
+# Obtener todos los productos
+# Método: GET
+# URL: /api/products
+# Descripción: Obtiene la lista de todos los productos disponibles en la tienda.
 
- * const carritoDeCompras = ['Zapatillas', 'Camiseta', 'Reloj'];
- * const nuevoCarritoDeCompras = [...carritoDeCompras, 'Bolso', 'Lentes de sol'];
- * console.log(nuevoCarritoDeCompras); 
- 
-# Rest
-# Supongamos que tienes una función que recibe varios atributos de un producto. Usamos el operador rest para capturar esos atributos adicionales
+*[
+*    { "id": 1, "name": "Ropa deportiva", "price": 30.99, "category": "Ropa" },
+*    { "id": 2, "name": "Smartphone X", "price": 299.99, "category": "Electrónica" },
+*    { "id": 3, "name": "Taza de café", "price": 5.99, "category": "Hogar" }
+*]
+# Método: POST
+# URL: /api/products
+# Descripción: Añade un nuevo producto al catálogo.
+# Ejemplo de cuerpo de la solicitud:
+*{
+*    "name": "Zapatillas de correr",
+*    "description": "Zapatillas ligeras y cómodas para correr",
+*    "price": 45.99,
+*    "category": "Calzado",
+*    "stock": 100
+*}
 
-* function crearProducto(nombre, precio, ...atributos) {
-*    return {
-*  nombre,
-*  precio,
-*  atributos
-*    };
-* }
 
-* const nuevoProducto = crearProducto('Zapatos', 49.99, 'Color: Negro', 'Talla: 42', 'Material: Cuero');
 
-* console.log(nuevoProducto);
-* Output: { nombre: 'Zapatos', precio: 49.99, atributos: ['Color: Negro', 'Talla: 42', 'Material: Cuero'] }
