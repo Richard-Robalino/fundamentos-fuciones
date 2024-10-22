@@ -4,7 +4,7 @@
 
 ### Ejemplos de `async/await`:
 
-1. **Conexión a una base de datos externa:**
+**Conexión a una base de datos externa:**
 ```javascript
 const connectToDatabase = () => {
     return new Promise((resolve, reject) => {
@@ -27,7 +27,7 @@ const checkDatabaseConnection = async () => {
 checkDatabaseConnection();
 ```
 
-2. **Obtención de datos de usuarios de una API:**
+**Obtención de datos de usuarios de una API:**
 ```javascript
 const getUserData = async () => {
     try {
@@ -46,7 +46,7 @@ getUserData();
 
 ### Ejemplos de consumo de una API privada :
 
-1. **Obtener lista de productos desde la API privada de Temu:**
+**Obtener lista de productos desde la API privada de Temu:**
 ```javascript
 const urlProductsAPI = "https://api.temu.com/v1/products";
 const apiKey = "YOUR_PRIVATE_API_KEY";
@@ -67,7 +67,7 @@ const fetchProducts = async () => {
 fetchProducts();
 ```
 
-2. **Obtener detalles de un producto específico por ID:**
+**Obtener detalles de un producto específico por ID:**
 ```javascript
 const productID = "12345";
 const urlProductDetailsAPI = `https://api.temu.com/v1/products/${productID}`;
